@@ -32,6 +32,7 @@ CREATE DATABASE IoT
 ### Datagenerator Python Script
 
 ```
+pip install influxdb
 python3 datagenerator.py
 ```
 
