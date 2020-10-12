@@ -18,6 +18,7 @@ docker run --name influx -p 8086:8086 -p 8088:8088 -d influxdb
 Get IP-Address of InfluxDB Container:
 ```
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' influx
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' influx
 ```
 Go to InfluxDB Container bash and create a new Database named 'IoT':
 ```
