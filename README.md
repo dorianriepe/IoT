@@ -22,6 +22,12 @@ The script '[datagenerator.py](https://github.com/dorianriepe/IoT/blob/main/data
 
 ![alt text](https://github.com/dorianriepe/IoT/blob/main/documentation/architecture.png)
 
+
+## Prerequisites
+
+- [x] Python3.8
+- [x] Docker
+
 ## Setup
 
 ### Influx DB
@@ -39,20 +45,29 @@ Go to InfluxDB Container bash and create a new Database named 'IoT':
 docker exec -it influx bash
 influx -precision rfc3339
 CREATE DATABASE IoT
+SHOW DATABASES
+exit
+exit
 ```
 
 
 
 ### Datagenerator Python Script
 
+Install `influxdb` Python Client
 ```
-pip install influxdb
+pip3 install influxdb
+```
+Start the Datagenerator Script. You should see three new values every 5 seconds.
+```
 python3 datagenerator.py
 ```
 
 
 
 ### Grafana
+
+_(New Terminal Session)_
 
 Start Grafana Docker Container:
 ```
