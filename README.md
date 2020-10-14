@@ -59,9 +59,9 @@ Start Grafana Docker Container:
 docker run --name grafana -d -p 3000:3000 grafana/grafana
 ```
 
-Go to `http://localhost:3000/login` and sign in with the default user `admin` and password `admin`
+Go to [`http://localhost:3000/login`](http://localhost:3000/login) and sign in with the default user `admin` and password `admin`
 
-Go to `http://localhost:3000/datasources/new` and create a new Datasource, Select `InfluxDB`:
+Go to [`http://localhost:3000/datasources/new`](http://localhost:3000/datasources/new) and create a new Datasource, Select `InfluxDB`:
 
 ![alt text](https://github.com/dorianriepe/IoT/blob/main/documentation/datasource.png "Add a new Datasource")
 
@@ -71,7 +71,7 @@ Insert URL: `http://<INFLUX_DOCKER_CONTAINER_IP>:8086` and Database: `IoT`
 
 Then `Save & Test`
 
-Go to `http://localhost:3000/dashboard/import` and copy & paste [Dashboard Panel JSON File](https://github.com/dorianriepe/IoT/blob/main/dashboard.json "Dashboard JSON File") and `Load`
+Go to [`http://localhost:3000/dashboard/import`](http://localhost:3000/dashboard/import) and copy & paste [Dashboard Panel JSON File](https://github.com/dorianriepe/IoT/blob/main/dashboard.json "Dashboard JSON File") and `Load`
 
 ![alt text](https://github.com/dorianriepe/IoT/blob/main/documentation/dashboard.png "Import Dashboard")
 
