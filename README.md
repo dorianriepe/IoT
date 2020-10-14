@@ -90,6 +90,7 @@ Go to [`http://localhost:3000/dashboard/import`](http://localhost:3000/dashboard
 
 ![alt text](https://github.com/dorianriepe/IoT/blob/main/documentation/dashboard.png "Import Dashboard")
 
+You should now be able to see the dashboard with the data!
 
 ## Dashboard
 
