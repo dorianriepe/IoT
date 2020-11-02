@@ -11,7 +11,7 @@ def on_message(client, userdata, message):
 broker_address="test.mosquitto.org"
 port=1883
 
-client = mqtt.Client("client1")
+client = mqtt.Client("client2")
 client.connect(broker_address, port) 
 
 client.loop_start()
